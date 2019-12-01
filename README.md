@@ -1,5 +1,5 @@
-# spring-boot-starter-kettle
-kettle starter for spring boot 
+# kettle8-spring-boot-starter
+Spring Boot Starter For Kettle 8.x
 
 ### 说明
 
@@ -13,7 +13,7 @@ kettle starter for spring boot
 ``` xml
 <dependency>
 	<groupId>${project.groupId}</groupId>
-	<artifactId>spring-boot-starter-kettle</artifactId>
+	<artifactId>kettle8-spring-boot-starter</artifactId>
 	<version>${project.version}</version>
 </dependency>
 ```
