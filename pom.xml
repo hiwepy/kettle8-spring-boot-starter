@@ -365,7 +365,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<commons-digester.version>2.1</commons-digester.version>
-		<commons-vfs2.version>2.2</commons-vfs2.version>
+		<commons-vfs2.version>2.4.1</commons-vfs2.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<kettle.version>4.2.0-RC1</kettle.version>
 		<pentaho-kettle.version>8.3.0.0-218</pentaho-kettle.version>
@@ -435,13 +435,6 @@
 		</dependency>
 		
 		<!-- kettle end -->
-		
-		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-vfs2 -->
-		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-vfs2</artifactId>
-		    <version>2.3</version>
-		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 		<dependency>
