@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConditionalOnProperty(name = { "logging.log4j.enabled" }, havingValue = "true", matchIfMissing = false)
+@ConditionalOnProperty(prefix = Kettle8Properties.PREFIX, value = "enabled", havingValue = "true")
 @EnableConfigurationProperties({ Kettle8Properties.class })
 public class Kettle8AutoConfiguration {
 
