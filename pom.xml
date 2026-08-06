@@ -427,6 +427,10 @@
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
         <maven-nexus-staging-plugin.version>1.6.8</maven-nexus-staging-plugin.version>
+                <guava.version>33.6.0-jre</guava.version>
+                <js.version>1.7R2</js.version>
+                <jxl.version>2.6.12</jxl.version>
+                <ognl.version>3.0.3</ognl.version>
     </properties>
 
     <dependencies>
@@ -499,7 +503,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>28.2-jre</version>
+            <version>${guava.version}</version>
         </dependency>
         
         <!-- For Commons Codec -->
@@ -530,21 +534,47 @@
         <dependency>
             <groupId>ognl</groupId>
             <artifactId>ognl</artifactId>
-            <version>3.0.3</version>
+            <version>${ognl.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
         <dependency>
             <groupId>net.sourceforge.jexcelapi</groupId>
             <artifactId>jxl</artifactId>
-            <version>2.6.12</version>
+            <version>${jxl.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/rhino/js -->
         <dependency>
             <groupId>rhino</groupId>
             <artifactId>js</artifactId>
-            <version>1.7R2</version>
+            <version>${js.version}</version>
         </dependency>
         
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ognl</groupId>
+                <artifactId>ognl</artifactId>
+                <version>${ognl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sourceforge.jexcelapi</groupId>
+                <artifactId>jxl</artifactId>
+                <version>${jxl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>rhino</groupId>
+                <artifactId>js</artifactId>
+                <version>${js.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 
 <distributionManagement><repository><id>2624322-release-6F6h6R</id><name>Maven Release Repository</name><url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-release-6f6h6r</url><releases><enabled>true</enabled></releases><snapshots><enabled>false</enabled></snapshots></repository><snapshotRepository><id>2624322-snapshot-3EoOv3</id><name>Maven Snapshot Repository</name><url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-snapshot-3eoov3</url><releases><enabled>false</enabled></releases><snapshots><enabled>true</enabled></snapshots><uniqueVersion>true</uniqueVersion></snapshotRepository></distributionManagement></project>
