@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConditionalOnProperty(prefix = Kettle8Properties.PREFIX, value = "enabled", havingValue = "true")
 @EnableConfigurationProperties({ Kettle8Properties.class })
-/**\n * Auto-configuration for Kettle8AutoConfiguration.\n *\n * @author [@Loong Wan](https://github.com/loong10k)\n * @since 1.0.0\n */
+/**\n * Auto-configuration for Kettle8AutoConfiguration.\n *\n * @author <a href="https://github.com/loong10k">Loong Wan</a>\n * @since 1.0.0\n */
 public class Kettle8AutoConfiguration {
 
 }
